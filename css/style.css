@@ -102,7 +102,7 @@ h6 {
 --------------------------------*/
 
 .section-header {
-  margin-bottom: 60px;
+  margin-bottom: 35px;
   position: relative;
   padding-bottom: 20px;
 }
@@ -1124,6 +1124,37 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #f6f7fd;
 }
 
+#buy-premium .nav-tabs {
+  text-align: center;
+  margin: auto;
+  display: block;
+  border-bottom: 0;
+  margin-bottom: 30px;
+}
+
+#buy-premium .nav-tabs li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+#buy-premium .nav-tabs a {
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: #0e1b4d;
+  color: #fff;
+  padding: 10px 100px;
+}
+
+#buy-premium .nav-tabs a.active {
+  background-color: #f82249;
+  color: #fff;
+}
+
+#buy-premium .tab-pane {
+  transition: ease-in-out .2s;
+}
+
 #buy-premium .card {
   border: none;
   border-radius: 5px;
@@ -1192,6 +1223,55 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #e0072f;
 }
 
+
+#buy-premium .schedule-item {
+  border-bottom: 1px solid #cad4f6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: background-color ease-in-out 0.3s;
+}
+
+
+#buy-premium .schedule-item time {
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+#buy-premium .schedule-item .speaker {
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+#buy-premium .schedule-item .speaker img {
+  height: 100%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-left: 50%;
+  transition: all ease-in-out 0.3s;
+}
+
+#buy-premium .schedule-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#buy-premium .schedule-item h4 span {
+  font-style: italic;
+  color: #19328e;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#buy-premium .schedule-item p {
+  font-style: italic;
+  color: #152b79;
+  margin-bottom: 0;
+}
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
@@ -1530,6 +1610,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   #schedule .nav-tabs a {
     padding: 8px 60px;
   }
+
+  #buy-premium .nav-tabs a {
+    padding: 8px 60px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1551,6 +1635,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 8px 50px;
   }
 }
+@media (max-width: 767px) {
+  #buy-premium .nav-tabs a {
+    padding: 8px 50px;
+  }
+}
+
 
 @media (max-width: 574px) {
   #venue .venue-info h3 {
@@ -1560,6 +1650,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 480px) {
   #schedule .nav-tabs a {
+    padding: 8px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  #buy-premium .nav-tabs a {
     padding: 8px 30px;
   }
 }

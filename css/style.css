@@ -302,7 +302,7 @@ h6 {
 .nav-menu li.buy-premium a {
   color: #fff;
   background: #f82249;
-  padding: 7px 22px;
+  padding: 7px 26px;
   border-radius: 50px;
   border: 2px solid #f82249;
   transition: all ease-in-out 0.3s;
@@ -1171,7 +1171,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #buy-premium .card .card-title {
-  margin: 10px 0;
+  margin: 16px 0;
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: bold;

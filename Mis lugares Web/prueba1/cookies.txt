@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.octarine.cc	TRUE	/	FALSE	1999999999	__cfduid	d9e52eb7c51db49a0652af666253ad6971618520579
+octarine.cc	TRUE	/	FALSE	1999999999	SameSite	Lax
+

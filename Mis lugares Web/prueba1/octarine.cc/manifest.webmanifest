@@ -1,8 +1,8 @@
 {
-  "name": "Octarine - Dota 2",
-  "short_name": "Octarine - Dota 2",
-  "theme_color": "#4000a7",
-  "background_color": "#3d0075",
+  "name": "MrGarabato",
+  "short_name": "MrGarabato",
+  "theme_color": "#8000a7",
+  "background_color": "#800075",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",

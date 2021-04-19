@@ -189,6 +189,78 @@ h6 {
   max-height: 40px;
 }
 
+#header #drop 
+{
+	padding: 0.3rem 2.5rem;
+    place-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#header #drop .container{
+    display: flex;
+    justify-content: space-around;
+    width: 992px;
+}
+
+#header #drop .btn{
+    padding: 0.3rem 1.2rem;
+    border: none;
+    outline: none;
+    background-color: crimson;
+    color: rgba(6, 12, 34, 0.98);
+    border-radius: 3px;
+}
+
+#header #drop .btn.active{
+}
+
+#header #drop .drop-wrapper{
+    position: relative;
+}
+
+#header #drop .drop-menu{
+    display: none;
+    position: absolute;
+    width: 150px;
+    border: 1px solid #5a75d8;
+	box-shadow: 1px 1px 3px 0 #42339a;
+}
+
+#header #drop .drop-menu.active{
+    display: block;
+	color: #f82249;
+}
+
+#header #drop .dropdown{
+    top: 100%;
+    margin-top: 0.125rem;
+}
+
+#header #drop .dropup{
+    bottom: 100%;
+    margin-bottom: 0.125rem;
+}
+
+#header #drop .dropleft{
+    right: 100%;
+    top: 0%;
+    margin-right: 0.125rem;
+}
+
+#header #drop .dropright{
+    left: 100%;
+    top: 0%;
+    margin-left: 0.125rem;
+}
+
+#header #drop .drop-menu a{
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #d2d4dc;
+	background-color: #050b21;
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/

@@ -1,0 +1,8 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+08:59:57	54/54	---M--	302	error ('Found')	text/html	date:Tue,%2019%20Jul%202022%2013:59:56%20GMT	https://crimsondota.site/me?first=0	C:/MrGarabato/xd/xd/crimsondota.site/me.0872d.delayed	(from )
+08:59:57	1338/1338	---M--	200	added ('OK')	text/html	etag:W/%2253a-8Gfv42gdkN4xkFfSrfLeWLzKMso%22	https://crimsondota.site/auth	C:/MrGarabato/xd/xd/crimsondota.site/auth.html	(from )
+08:59:58	149/149	---M--	404	error ('Not%20Found')	text/html	date:Tue,%2019%20Jul%202022%2013:59:57%20GMT	https://crimsondota.site/robots.txt		(from )
+08:59:58	144964/144964	---M--	200	added ('OK')	image/png	etag:W/%2223644-181b1bf8e12%22	https://crimsondota.site/static/assets/crimson.png	C:/MrGarabato/xd/xd/crimsondota.site/static/assets/crimson.png	(from https://crimsondota.site/auth)
+08:59:59	2409/2409	---M--	200	added ('OK')	text/css	etag:W/%22969-181b1bfb422%22	https://crimsondota.site/static/style/auth.css	C:/MrGarabato/xd/xd/crimsondota.site/static/style/auth.css	(from https://crimsondota.site/auth)
+08:59:59	4119/4119	---M--	200	added ('OK')	application/javascript	etag:W/%221017-181b4d75566%22	https://crimsondota.site/static/script/auth.js	C:/MrGarabato/xd/xd/crimsondota.site/static/script/auth.js	(from https://crimsondota.site/auth)
+08:59:59	4209/4209	---M--	200	added ('OK')	image/png	etag:W/%221071-181b1bf8e5e%22	https://crimsondota.site/static/assets/mini.png	C:/MrGarabato/xd/xd/crimsondota.site/static/assets/mini.png	(from https://crimsondota.site/static/style/auth.css)

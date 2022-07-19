@@ -44,9 +44,6 @@ async function activatePromo() {
 window.onload = async () => {
     let token = getCookie("token");
 
-    if(!token){
-        window.location = "/auth"; return;
-    }
         
     const response = await fetch(`/api/auth?token=${token}`);
     const json = await response.json();

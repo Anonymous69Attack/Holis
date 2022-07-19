@@ -81,26 +81,11 @@ async function auth() {
             setCookie('token', json.token, {secure: true, 'max-age': 86400 * 30 * 12});
             window.location = "/me";
         }
-    }else{
-        const response = await fetch(`/api/reg?username=${login}&password=${password}`);
-        const json = await response.json();
-
-        if (json.error) {
-            if (json.error == 1){
-                window.location = "?error=Логин должен быть больше 4 символов !";
-            }else if(json.error == 2){
-                window.location = "?error=Логин должен быть меньше 16 символов !";
-            }else if(json.error == 3){
-                window.location = "?error=Пароль должен быть больше 8 символов !";
-            }else if(json.error == 4){
-                window.location = "?error=Пароль должен быть меньше 32 символов !";
-            }else if(json.error == 5){
-                window.location = "?error=Логин уже используется !";
-            }else if(json.error == 6){
-                window.location = "?error=Запрещенный символ";
-            }
-        } else {
-            setCookie('token', json.token, {secure: true, 'max-age': 86400 * 30 * 12});
+    }
+    else
+    {
+        
+        setCookie('token', json.token, {secure: true, 'max-age': 86400 * 30 * 12});
 
             document.querySelector("#error").style.background = "#82fb6c";
             document.querySelector("#error").style.color = "#111111";
@@ -110,6 +95,5 @@ async function auth() {
             setTimeout(() => {
                 window.location = "/me?first=1";
             }, 1000);
-        }
     }
 }

@@ -51,10 +51,6 @@ window.onload = async () => {
     const response = await fetch(`/api/auth?token=${token}`);
     const json = await response.json();
 
-    if (json.error){
-        window.location = "/auth"; return;
-    }
-
     me = json;
 
     if (json.subtime > Math.floor(Date.now() / 1000)){

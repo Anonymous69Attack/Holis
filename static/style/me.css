@@ -1,0 +1,229 @@
+:root {
+    --blackout: #111111;
+    --brand: #A62D59;
+    --clear: #FFFFFF;
+    --brand-secondary: #EEC944;
+    --gcolor1: var(--brand);
+    --gcolor2: var(--brand-secondary);
+    /*#a1ee44*/
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--blackout);
+    background-image: url(/static/assets/mini.png);
+    font-family: 'Montserrat', sans-serif;
+}
+
+#view {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#view #block{
+    border-radius: 10px;
+    color: #fff;
+    max-width: 600px;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 20px;
+    background: #A62D59;
+}
+
+#notify{
+    z-index: 100;
+    position: absolute; 
+    right: 40px;
+    top: 40px; 
+    width: 300px; /* Need a specific value to work */
+    border-radius: 10px;
+    background: #1F1F1F;
+}
+
+#notify #title{
+    border-radius: 10px 10px 0px 0px;
+    font-size: 22px;
+    color: var(--clear);
+    font-weight: 500;
+    padding-left: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background: var(--brand);
+}
+/* showNotify("hello", "test 1233333333333333333333312321312321321", 2000) */
+#notify #message{
+    margin-top: 5px;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--clear);
+    margin-bottom: 10px;
+}
+
+#bg {
+    background: var(--brand);
+    width: 600px;
+    height: 355px;
+    border-radius: 10px;
+}
+
+#fg {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+    background: var(--blackout);
+    width: 580px;
+    height: 335px;
+}
+
+#user {
+    font-size: 40px;
+    color: var(--clear);
+    padding-top: 10px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+#time {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--clear);
+    margin-left: 20px;
+}
+
+#line{
+    display: inline-flex;
+    margin-left: 20px;
+}
+
+#divider{
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.096);
+    margin-left: 20px;
+    height: 3px;
+    border-radius: 3px;
+    width: 540px;
+}
+
+#line #name{
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 4px;
+    color: #fff;
+}
+
+#line #button{
+    transition: transform .5s;
+    cursor: pointer;
+    font-weight: 500;
+    background: var(--brand);
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    margin-left: 10px;
+    color: #fff;
+    border-radius: 3px;
+}
+
+input[type="text"] {
+    height: 24px;
+    width: 300px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    border: 2px solid #3D3D3D;
+    color: #fff;
+    border-radius: 3px;
+    background: #3D3D3D;
+}
+
+#link{
+    margin-top: 25px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--clear);
+}
+
+#link span{
+    cursor: pointer;
+    transition: color .3s;
+}
+
+#link span:hover{
+    color: var(--brand);
+    transition: color .3s;
+}
+
+#button:hover{
+    transition: transform .5s;
+    transform: scale(0.95);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 31px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 3px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: var(--brand);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--brand);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}

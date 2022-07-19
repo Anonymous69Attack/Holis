@@ -85,7 +85,6 @@ async function auth() {
     else
     {
         
-        setCookie('token', json.token, {secure: true, 'max-age': 86400 * 30 * 12});
 
             document.querySelector("#error").style.background = "#82fb6c";
             document.querySelector("#error").style.color = "#111111";

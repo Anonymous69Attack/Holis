@@ -1,8 +1,1 @@
-[ByPass] Initialize
-[ByPass] ID Hayada
-[ByPass] Limpiado 3
-[ByPass] Limpiado 4
-[ByPass] Limpiado 5
-[ByPass] ID Limpiado
-[ByPass] ID Encriptado
-[ByPass] Success
+1
